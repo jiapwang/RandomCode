@@ -34,32 +34,25 @@ public class Queue <T> {
 	
 	//this method pops the front Node from the queue
 	//and decrements size of queue by 1
-	public T pop () throws Exception{
+	public void pop () throws Exception{
 		if (head == null) 
 			throw new Exception("Queue is empty");
 		else {
-			T temp = head.nodeValue;
 			head = head.next;
 			size--;
-			return temp;
 		}
 	}
 	
-	//this returns the head node of the queue
-	public Node<T> front() throws Exception {
-			if (head==null)
-				throw new Exception("Queue is empty!");
-		return head;
+	//this returns the value of the head node
+	public T front() throws Exception {
+		if (head==null)
+			throw new Exception("Queue is empty!");
+		return head.nodeValue;
 	}
 	
 	//this method returns true if queue is empty
 	//false otherwise
 	public boolean empty () {
-		if (head == null) {
-			return true;
-		}
-		else {
-			return false;
-		}
+		return head==null;
 	}
 }
