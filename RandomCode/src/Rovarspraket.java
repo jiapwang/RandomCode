@@ -14,6 +14,7 @@ public class Rovarspraket {
 		
 		System.out.print("Please enter a sentence for encryption: ");
 		String original = input.nextLine();
+		input.close();
 		
 		for (int i = 0; i< original.length(); i++) {
 			if ("bcdfghjlklmnpqrstvwxyz".contains(original.toLowerCase().charAt(i)+"")) {

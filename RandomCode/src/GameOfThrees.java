@@ -12,6 +12,7 @@ public class GameOfThrees {
 		
 		System.out.print("Please input an integer value: ");
 		int n = input.nextInt();
+		input.close();
 		
 		if (n <= 0) {
 			System.out.println("Cannot play game with this number! GG");
