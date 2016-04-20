@@ -9,7 +9,7 @@ A 3x3 magic square is a 3x3 grid of the numbers 1-9 such that each row, column, 
 9 5 1 
 4 3 8
 
-Write a function that, given a grid containing the numbers 1-9, determines whether it's a magic square.
+Write a program that, given a grid containing the numbers 1-9, determines whether it's a magic square.
 */
 
 

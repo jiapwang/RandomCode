@@ -24,6 +24,7 @@ public class Disemvoweler {
 		input.close();
 		
 		original = original.replace(" ", "");	//delete all the spaces in the sentence
+			
 		for (int i = 0; i < original.length(); i++) {
 			if ("aeiou".contains(original.toLowerCase().charAt(i)+"")) 
 				removedVowels += original.charAt(i);	
