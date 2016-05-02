@@ -13,7 +13,7 @@ public class isISBN {
 		String data = "0-7475-3269-9"; 
 		data = data.replace("-", "");
 		
-		isISBN = isISBN(data); 
+		isISBN = isValidISBN(data); 
 		
 		System.out.println(isISBN); 
 	}
@@ -21,7 +21,7 @@ public class isISBN {
 	//this method checks to see if the string passed into it is a valid ISBN number 
 	//return true if valid
     //false otherwise
-	public static boolean isISBN (String data) {
+	public static boolean isValidISBN (String data) {
 	    int sum = 0; 
 	    for (int i = 0; i < data.length(); i++) {
 	        sum += Integer.parseInt(data.charAt(i)+"") * (10-i); 

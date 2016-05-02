@@ -29,5 +29,6 @@ public class DNA_Replication {
 			}
 		}
 		System.out.print("Original: " + original.toUpperCase() + "\n" + "Complement: " + complement);
+		input.close();
 	}
 }
