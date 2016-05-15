@@ -6,7 +6,6 @@ public class Robot {
 	private String color; 	//robot color
 	private int pos; 		//robot position
 	
-	
 	//if c holds the value 'O' then set color equal to "Orange" and set robot position to 1
 	//else set color equal to "Blue" and set robot position to 1
 	public Robot (char c) {
